@@ -1,0 +1,129 @@
+.page {
+    margin: 0;/* я хочу все по центру*/
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.page-grey {
+    background-color: #F6F2F2;
+}
+/*HEADER*/
+
+.header { /* описали хедер серый прямоугольник и как в нем будут располагаться элементы*/
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* я хочу что бы все переносилось*/
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 1250px;
+    min-height: 90px;
+    margin: 0 auto; /*выравнивается по середине*/
+    background: #000000;
+}
+.header-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu { /*какя будет общая навигация*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none; /*отключение точек у списка, можносделать квадратные square или другой формы*/
+    padding: 0; /*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
+    margin: 0;/*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
+
+}
+.menu-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 90px;
+
+}
+.menu-item:hover {
+    background-color: #FF3F40;
+}
+.menu-link { /*слова в навигации описание*/
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: #E0E0E0;
+    font-size: 14px;
+    font-weight: bold; /*выделеный жырный текст*/
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*INTRO*/
+
+.page-content {
+    flex-grow: 1;
+}
+.intro {
+    padding-top: 102px; /*отступы по тексту*/
+    padding-bottom: 94px;
+}
+.intro-content {
+    position: relative;
+    bottom: -28px;
+    width: 616px;
+    margin-bottom: 102px;
+    margin-right: 74px;
+}
+.intro-heading {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /*отступы между буквами. указано в макете*/
+
+}
+.intro-text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 28px;
+    max-width: 520px; /* ширина текста*/
+    margin-bottom: 50px;
+    font-weight: 200;
+    margin-top: 36px; /**/
+    
+}
+.action-button {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 228px;
+    height: 56px;
+    padding: 16px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button-red {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #FF2D2D;
+}
+.intro-link{
+    bottom: -40px;
+    position: relative;
+}
+.intro-image {
+    width: 554px;
+    height: 360px;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1250px; 
+    margin: 0 auto; /*отцентровать*/
+    padding: 1vw;
+    padding-right: 1vw;
+}
