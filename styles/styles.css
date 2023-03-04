@@ -1,5 +1,5 @@
 .page {
-    margin: 0;/* я хочу все по центру*/
+    margin: 0;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -9,29 +9,29 @@
 }
 /*HEADER*/
 
-.header { /* описали хедер серый прямоугольник и как в нем будут располагаться элементы*/
+.header { 
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap; /* я хочу что бы все переносилось*/
+    flex-wrap: wrap; 
     align-items: stretch;
     justify-content: center;
     width: 100%;
     max-width: 1250px;
     min-height: 90px;
-    margin: 0 auto; /*выравнивается по середине*/
+    margin: 0 auto; 
     background: #000000;
 }
 .header-navigation {
     display: flex;
     flex-wrap: wrap;
 }
-.menu { /*какя будет общая навигация*/
+.menu { 
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    list-style: none; /*отключение точек у списка, можносделать квадратные square или другой формы*/
-    padding: 0; /*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
-    margin: 0;/*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
 
 }
 .menu-item {
@@ -44,14 +44,14 @@
 .menu-item:hover {
     background-color: #FF3F40;
 }
-.menu-link { /*слова в навигации описание*/
+.menu-link {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     padding: 0 30px;
     color: #E0E0E0;
     font-size: 14px;
-    font-weight: bold; /*выделеный жырный текст*/
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -61,7 +61,7 @@
     flex-grow: 1;
 }
 .intro {
-    padding-top: 102px; /*отступы по тексту*/
+    padding-top: 102px;
     padding-bottom: 94px;
 }
 .intro-content {
@@ -78,18 +78,17 @@
     line-height: 72px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1.5px; /*отступы между буквами. указано в макете*/
+    letter-spacing: 1.5px;
 
 }
 .intro-text {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
-    max-width: 520px; /* ширина текста*/
+    max-width: 520px; 
     margin-bottom: 50px;
     font-weight: 200;
-    margin-top: 36px; /**/
-    
+    margin-top: 36px; 
 }
 .action-button {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -123,7 +122,7 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1250px; 
-    margin: 0 auto; /*отцентровать*/
+    margin: 0 auto; 
     padding: 1vw;
     padding-right: 1vw;
 }
