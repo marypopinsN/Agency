@@ -4,7 +4,10 @@
     display: flex;
     flex-direction: column;
 }
-.page-grey {
+.page__header_grey {
+    background-color: #F6F2F2;
+}
+.page__intro_grey{
     background-color: #F6F2F2;
 }
 /*HEADER*/
@@ -21,7 +24,7 @@
     margin: 0 auto; /*выравнивается по середине*/
     background: #000000;
 }
-.header-navigation {
+.header__navigation {
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,17 +37,17 @@
     margin: 0;/*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
 
 }
-.menu-item {
+.menu__item {
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
 
 }
-.menu-item:hover {
+.menu__item:hover {
     background-color: #FF3F40;
 }
-.menu-link { /*слова в навигации описание*/
+.menu__link { /*слова в навигации описание*/
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -57,21 +60,21 @@
 }
 /*INTRO*/
 
-.page-content {
+.page__content {
     flex-grow: 1;
 }
 .intro {
     padding-top: 102px; /*отступы по тексту*/
     padding-bottom: 94px;
 }
-.intro-content {
+.intro__content {
     position: relative;
     bottom: -28px;
     width: 616px;
     margin-bottom: 102px;
     margin-right: 74px;
 }
-.intro-heading {
+.intro__heading {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 60px;
@@ -81,7 +84,7 @@
     letter-spacing: 1.5px; /*отступы между буквами. указано в макете*/
 
 }
-.intro-text {
+.intro__text {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
@@ -103,17 +106,17 @@
     border-radius: 6px;
 }
 
-.button-red {
+.action-button_button_red {
     font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
     background-color: #FF2D2D;
 }
-.intro-link{
+.intro__link {
     bottom: -40px;
     position: relative;
 }
-.intro-image {
+.intro__image {
     width: 554px;
     height: 360px;
 }
