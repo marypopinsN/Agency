@@ -210,3 +210,81 @@
 .service__heading_anima::before {
     content: url('../images/Animation.png');
 }
+/*FEATURE PRODUCTS*/
+.feature {
+    padding-top: 104px;
+    padding-bottom: 52px;
+}
+.feature__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 66px; /*расстояние от соседних элементов*/
+}
+.feature__heading {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    text-transform: uppercase; /*заголовок заглавными буквами*/
+    padding-left: 14px; /*выравнить заголовок*/
+    margin-bottom: 16px;
+}
+.feature__taxt {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 550px;
+    margin: 0 auto 30px; /*отступ от заголовка*/
+}
+.header__line { /* как сделать hr цвет: https://www.w3schools.com/howto/howto_css_style_hr.asp */
+    border: 1px solid #FF2D2D; 
+    width: 134px;
+    max-height: 4px;
+}
+.products__filter {
+    width: 100%;
+    list-style: none; /*список без точек*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /*элементы списка в строчку (по умолчанию они в столбик)*/
+    justify-content: center; /*все пункты в списке посередине (пока слитно)*/
+    margin-bottom: 60px; /*отступ списка от красной полосы*/
+}
+.products__link {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: uppercase; /*заголовок заглавными буквами*/
+    position: relative; 
+    left: 46px;
+    color: #000000;
+    margin-right: 56px; /*все пункты в списке разделены между собой*/
+    font-size: 22px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.products__link_active {
+    color: #FF2D2D;
+    opacity: 1; /*показывает на каком пункте находится пользователь*/
+}
+.products__link:hover { /*при наведении на пункт меню они окрашиваются в красный*/
+    color: #FF2D2D;
+}
+.products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /*все картинки разделены между собой*/
+    flex-wrap: wrap;
+}
+.product {
+    flex: 1 1 24%; /*24% нужны для адаптива*/
+    max-width: 298px; /*картинки будут одного размера*/
+    height: 292px;
+    margin-bottom: 18px; /*расстояние между картинками*/
+    object-fit: cover; /* https://developer.mozilla.org/ru/docs/Web/CSS/object-fit 
+    Изменение размера контента (картинки в данном случае); cover будет квадрат*/
+}
+.product:hover {
+    cursor: pointer; /*при наведении курсора выделяется*/
+    max-width: 400px; /*при наведении курсора становится больше в размере*/
+    /*animation-duration: 4s;*/
+}
+/* Анимация https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+https://www.w3schools.com/css/css3_animations.asp*/
