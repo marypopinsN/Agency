@@ -1,6 +1,6 @@
 /*RECTANGLE* - Верхняя часть макета с навигацией*/
 .page {
-    margin: 0;/* я хочу все по центру*/
+    margin: 0;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -13,29 +13,29 @@
 }
 /*HEADER*/
 
-.header { /* описали хедер серый прямоугольник и как в нем будут располагаться элементы*/
+.header {
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap; /* я хочу что бы все переносилось*/
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
     width: 100%;
     max-width: 1250px;
     min-height: 90px;
-    margin: 0 auto; /*выравнивается по середине*/
+    margin: 0 auto;
     background: #000000;
 }
 .header__navigation {
     display: flex;
     flex-wrap: wrap;
 }
-.menu { /*какя будет общая навигация*/
+.menu {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    list-style: none; /*отключение точек у списка, можносделать квадратные square или другой формы*/
-    padding: 0; /*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
-    margin: 0;/*паддинг и марджин, которые стоят по умолчанию сделать нулевыми*/
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
 
 }
 .menu__item {
@@ -48,14 +48,14 @@
 .menu__item:hover {
     background-color: #FF3F40;
 }
-.menu__link { /*слова в навигации описание*/
+.menu__link { 
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     padding: 0 30px;
     color: #E0E0E0;
     font-size: 14px;
-    font-weight: bold; /*выделеный жырный текст*/
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -65,7 +65,7 @@
     flex-grow: 1;
 }
 .intro {
-    padding-top: 102px; /*отступы по тексту*/
+    padding-top: 102px;
     padding-bottom: 94px;
 }
 .intro__content {
@@ -82,17 +82,17 @@
     line-height: 72px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1.5px; /*отступы между буквами. указано в макете*/
+    letter-spacing: 1.5px;
 
 }
 .intro__text {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
-    max-width: 520px; /* ширина текста*/
+    max-width: 520px;
     margin-bottom: 50px;
     font-weight: 200;
-    margin-top: 36px; /**/
+    margin-top: 36px; 
     
 }
 .action-button {
@@ -127,22 +127,21 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1250px; 
-    margin: 0 auto; /*отцентровать*/
+    margin: 0 auto;
     padding: 1vw;
     padding-right: 1vw;
 }
 /*SERVICES - левая часть макета с перечислением сервисов компании*/
 .services{
-    padding-top: 106px; /*отступ от RECTANGLE- Верхняя часть макета с навигацией*/
-    padding-bottom: 52px; /*что бы поле с сервисами было более растянуто*/
-    border-bottom: 5px solid #ECECEC ; /*полоса под секцией solid прямая шириной 5px и цвет #ECECEC*/
+    padding-top: 106px; 
+    padding-bottom: 52px; 
+    border-bottom: 5px solid #ECECEC ; 
 }
 .services__lead {
-    flex: 1 1 502px; /*первый и второй показатель говорит что элемент может разширяться и сжиматься, 
-    а третий задает ширину до всего остального*/
+    flex: 1 1 502px; 
     max-width: 502px;
-    margin-bottom: 50px; /*выравнивание*/
-    margin-right: 50px; /*выравнивание*/
+    margin-bottom: 50px; 
+    margin-right: 50px; 
 }
 .services__heading {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -183,7 +182,7 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     letter-spacing: 1.5px;
-    font-weight: 600; /*жирный шрифт*/
+    font-weight: 600; 
     font-size: 24px;
     margin-bottom: 12px;
 }
@@ -218,13 +217,13 @@
 .feature__header {
     width: 100%;
     text-align: center;
-    margin-bottom: 66px; /*расстояние от соседних элементов*/
+    margin-bottom: 66px; 
 }
 .feature__heading {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 42px;
-    text-transform: uppercase; /*заголовок заглавными буквами*/
-    padding-left: 14px; /*выравнить заголовок*/
+    text-transform: uppercase; 
+    padding-left: 14px; 
     margin-bottom: 16px;
 }
 .feature__taxt {
@@ -232,7 +231,7 @@
     font-size: 16px;
     line-height: 28px;
     max-width: 550px;
-    margin: 0 auto 30px; /*отступ от заголовка*/
+    margin: 0 auto 30px; 
 }
 .feature__line { /* как сделать hr цвет: https://www.w3schools.com/howto/howto_css_style_hr.asp */
     border: 1px solid #FF2D2D; 
@@ -241,50 +240,48 @@
 }
 .products__filter {
     width: 100%;
-    list-style: none; /*список без точек*/
+    list-style: none; 
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /*элементы списка в строчку (по умолчанию они в столбик)*/
-    justify-content: center; /*все пункты в списке посередине (пока слитно)*/
-    margin-bottom: 60px; /*отступ списка от красной полосы*/
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-bottom: 60px; 
 }
 .products__link {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase; 
     position: relative; 
     left: 46px;
     color: #000000;
-    margin-right: 56px; /*все пункты в списке разделены между собой*/
+    margin-right: 56px; 
     font-size: 22px;
     line-height: 24px;
     text-decoration: none;
 }
 .products__link_active {
     color: #FF2D2D;
-    opacity: 1; /*показывает на каком пункте находится пользователь*/
+    opacity: 1; 
 }
-.products__link:hover { /*при наведении на пункт меню они окрашиваются в красный*/
+.products__link:hover { 
     color: #FF2D2D;
 }
 .products {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between; /*все картинки разделены между собой*/
+    justify-content: space-between; 
     flex-wrap: wrap;
 }
 .product {
-    flex: 1 1 24%; /*24% нужны для адаптива*/
-    max-width: 298px; /*картинки будут одного размера*/
+    flex: 1 1 24%; 
+    max-width: 298px; 
     height: 292px;
-    margin-bottom: 18px; /*расстояние между картинками*/
-    object-fit: cover; /* https://developer.mozilla.org/ru/docs/Web/CSS/object-fit 
-    Изменение размера контента (картинки в данном случае); cover будет квадрат*/
+    margin-bottom: 18px; 
+    object-fit: cover; 
 }
 .product:hover {
-    cursor: pointer; /*при наведении курсора выделяется*/
-    max-width: 400px; /*при наведении курсора становится больше в размере*/
-    /*animation-duration: 4s;*/
+    cursor: pointer; 
+    max-width: 400px; 
 }
 /* Анимация https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 https://www.w3schools.com/css/css3_animations.asp*/
