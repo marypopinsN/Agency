@@ -233,7 +233,7 @@
     max-width: 550px;
     margin: 0 auto 30px; 
 }
-.feature__line { /* как сделать hr цвет: https://www.w3schools.com/howto/howto_css_style_hr.asp */
+.feature__line { 
     border: 1px solid #FF2D2D; 
     width: 134px;
     max-height: 4px;
@@ -283,9 +283,6 @@
     cursor: pointer; 
     max-width: 400px; 
 }
-/* Анимация https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
-https://www.w3schools.com/css/css3_animations.asp*/
-
 
 /*TEAM*/
 
@@ -295,14 +292,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 .team__header {
     width: 100%;
-    text-align: left; /*параграф и заголовок слева*/
-    margin-bottom: 66px; /*расстояние всего контейнера от др. элементов*/
+    text-align: left; 
+    margin-bottom: 66px; 
 
 }
 .team__heading {
-    font-size: 42px; /*размер шрифта*/
+    font-size: 42px; 
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase; 
     margin-bottom: 24px;
 }
 .team__text {
@@ -317,7 +314,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     border: 1px solid #FF2D2D; 
     width: 134px;
     max-height: 4px;
-    margin-left: 0; /*расстояние слева убираем, контент сдвигается влево*/
+    margin-left: 0; 
 }
 .team__members {
     width: 100%;
@@ -327,7 +324,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     min-height: 462px;
 }
 .team__selcted-photo {
-    flex-shrink: 0; /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink*/
+    flex-shrink: 0; 
     width: 322px;
     height: 462px;
     margin-right: 66px;
@@ -337,26 +334,17 @@ https://www.w3schools.com/css/css3_animations.asp*/
     align-self: start;
                        
 }
-/*
-  https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
-  https://hcdev.ru/css/grid-column-start/
-  https://hcdev.ru/css/grid-auto-rows/
-  https://hcdev.ru/css/grid-row/ 
-  CSS свойство grid-row определяет с какой строки в макете сетки будет начинаться элемент, 
-  сколько строк будет занимать элемент, или на какой строке завершится элемент в макете сетки. 
-  Является сокращенным свойством для свойств grid-row-start и grid-row-end.
-  */
+
   .team__main-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  /*на случай если grid браузером не поддерживается, 
-    задается команда замена grid на другой контент*/
+
 @supports (display: grid) and (display: contents) {
     .team__members {
         display: grid;
-        grid-template-columns: repeat(2, auto); /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns*/
+        grid-template-columns: repeat(2, auto); 
         grid-template-rows: repeat(2, auto);
     }
     .team__main-content {
@@ -380,7 +368,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 .team__selcted-name {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase;
     margin-right: 30px;
     bottom: 6px;
     font-size: 30px;
@@ -408,14 +396,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
     position: relative;
     margin-top: 18px;
 }
-.member:not(:last-child) { /*поставить элементы в ряд*/
+.member:not(:last-child) { 
     margin-right: 18px;
 }
 .member_name {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden; /*выходит текст при наведении*/
+    visibility: hidden; 
     color: #FFFFFF;
     position: absolute;
     bottom: 0;
@@ -424,10 +412,10 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin: 0;
     text-align: center;
     background-color: #000000;
-    opacity: 0.5; /*прозрачность*/
+    opacity: 0.5; 
 }
 .member:hover > .member_name {
-    visibility: visible; /*выходит текст при наведении*/
+    visibility: visible; 
 }
 .member-photo {
     display: block;
