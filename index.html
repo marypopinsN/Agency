@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 
-<body class="page">
+<body class="page"> <!--RECTANGLE* - Верхняя часть макета с навигацией-->
     <div class="page__header page__header_grey">
         <header class="header">
             <nav class="header__navigation">
@@ -33,7 +33,7 @@
             </nav>
         </header>
     </div>
-    <main class="page__content">
+    <main class="page__content"><!--INTRO Contact Us-->
         <div class="page__intro page__intro_grey">
             <section class="intro section">
                 <div class="intro__content">
@@ -54,8 +54,10 @@
                 </a>
             </section>
         </div>
+        <!--SERVICES-->
         <section class="section services">
-            <div class="services__lead">
+            <!--SERVICES - левая часть макета с кнопкой-->
+            <div class="services__lead"> 
                 <h2 class="services__heading section-heading">
                     do you know we can provide for you ?
                 </h2>
@@ -67,7 +69,8 @@
                 </p>
                 <a class="action-button action-button_white" href="">Learn More</a>
             </div>
-            <div class="services__blocks">
+            <!--SERVICES - правая часть макета с перечислением сервисов компании-->
+            <div class="services__blocks"> 
                 <section class="service">
                     <h3 class="service__heading service__heading_manage">
                         Management
@@ -115,6 +118,7 @@
                 </section>
             </div>
         </section>
+        <!--FEATURE PRODUCTS с картинками продуктов компании-->
         <section class="section feature"> 
             <div class="feature__header">
                 <h2 class="feature__heading section-heading" >
@@ -164,7 +168,8 @@
                 <img class="product" src="images/work-8.jpg" alt="скриншот макета">
             </div>
         </section>
-        <section class="section team"> <!--Секция Meet our team-->
+        <!--Секция Meet our team - сотрудники компании и соц. сети-->
+        <section class="section team"> 
             <div class="team__header">
                 <h2 class="team__heading section__heading" id="about">
                     Meet our team
@@ -222,6 +227,22 @@
                     </section>
                 </div>
             </div>
+        </section>
+        <!--subscribe-->
+        <section class="section subscribe">
+            <div class="subscribe__header">
+                <h2 class="subscribe__heading section-heading">
+                    Design tips, tricks, and freebies. Delivered weekly.
+                </h2>
+                <p class="subscribe__text">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
+                </p>
+            </div>
+            <form class="subscribe__form" action="" method="post">
+                <input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
+                <button class="subscribe__button" type="submit">subscribe</button> 
+                <!--https://www.seedprod.com/best-email-newsletter-services/-->
+            </form>
         </section>
     </main>
 </body>
