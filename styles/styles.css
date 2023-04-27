@@ -6,31 +6,36 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
     font-family: 'Open Sans';
     font-weight: 400;
     font-style: italic;
 }
+
 @font-face {
     src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
     font-family: 'Open Sans';
     font-weight: 600;
     font-style: italic;
 }
+
 @font-face {
     src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
     font-family: 'Open Sans';
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
     font-family: 'Open Sans';
     font-weight: 800;
     font-style: italic;
-}   
-    /*
+}
+
+/*
     @font-face {
         font-family: 'Open Sans';
         font-style: normal;
@@ -56,12 +61,15 @@
     display: flex;
     flex-direction: column;
 }
+
 .page__header_grey {
     background-color: #F6F2F2;
 }
-.page__intro_grey{
+
+.page__intro_grey {
     background-color: #F6F2F2;
 }
+
 /*HEADER*/
 
 .header {
@@ -76,19 +84,22 @@
     margin: 0 auto;
     background: #000000;
 }
+
 .header__navigation {
     display: flex;
     flex-wrap: wrap;
 }
+
 .menu {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
     margin: 0;
 
 }
+
 .menu__item {
     display: flex;
     align-items: stretch;
@@ -96,11 +107,13 @@
     min-height: 90px;
 
 }
+
 .menu__item:hover {
     background-color: #FF3F40;
 }
-.menu__link { 
-   /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
+
+.menu__link {
+    /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -110,15 +123,18 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+
 /*INTRO*/
 
 .page__content {
     flex-grow: 1;
 }
+
 .intro {
     padding-top: 102px;
     padding-bottom: 94px;
 }
+
 .intro__content {
     position: relative;
     bottom: -28px;
@@ -126,6 +142,7 @@
     margin-bottom: 102px;
     margin-right: 74px;
 }
+
 .intro__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
@@ -136,6 +153,7 @@
     letter-spacing: 1.5px;
 
 }
+
 .intro__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
@@ -143,9 +161,10 @@
     max-width: 520px;
     margin-bottom: 50px;
     font-weight: 200;
-    margin-top: 36px; 
-    
+    margin-top: 36px;
+
 }
+
 .action-button {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     box-sizing: border-box;
@@ -164,36 +183,42 @@
     color: #FFFFFF;
     background-color: #FF2D2D;
 }
+
 .intro__link {
     bottom: -40px;
     position: relative;
 }
+
 .intro__image {
     width: 554px;
     height: 360px;
 }
+
 .section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1250px; 
+    max-width: 1250px;
     margin: 0 auto;
     padding: 1vw;
     padding-right: 1vw;
 }
+
 /*SERVICES - левая часть макета с кнопкой*/
-.services{
-    padding-top: 106px; 
-    padding-bottom: 52px; 
-    border-bottom: 5px solid #ECECEC ; 
+.services {
+    padding-top: 106px;
+    padding-bottom: 52px;
+    border-bottom: 5px solid #ECECEC;
 }
+
 .services__lead {
-    flex: 1 1 502px; 
+    flex: 1 1 502px;
     max-width: 502px;
-    margin-bottom: 50px; 
-    margin-right: 50px; 
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
+
 .services__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     position: relative;
@@ -202,12 +227,14 @@
     text-transform: uppercase;
     font-size: 42px;
 }
+
 .services__text {
-   /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
+    /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
     line-height: 28px;
     margin-bottom: 50px;
 }
+
 .action-button_white {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     font-size: 18px;
@@ -215,6 +242,7 @@
     background-color: #FFFFFF;
     border: 2px solid #FF0000;
 }
+
 .services__blocks {
     flex: 1 1;
     max-width: 610px;
@@ -222,6 +250,7 @@
     flex-wrap: wrap;
     margin-top: 36px;
 }
+
 /*SERVICE - правая часть макета с перечислением сервисов компании*/
 .service {
     flex: 1 1 288px;
@@ -229,111 +258,131 @@
     margin-bottom: 50px;
     margin-left: 16px;
 }
+
 .service__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
     letter-spacing: 1.5px;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 24px;
     margin-bottom: 12px;
 }
+
 .service__heading::before {
     display: block;
     width: 41px;
     height: 41px;
     margin-bottom: 22px;
 }
+
 .service_text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
     line-height: 28px;
 }
+
 .service__heading_manage::before {
     content: url('../images/Management.png');
 }
+
 .service__heading_UX::before {
     content: url('../images/UIUXDesign.png');
 }
+
 .service__heading_logo::before {
     content: url('../images/LogoBranding.png');
 }
+
 .service__heading_anima::before {
     content: url('../images/Animation.png');
 }
+
 /*FEATURE PRODUCT - с картинками продуктов компании*/
 .feature {
     padding-top: 104px;
     padding-bottom: 52px;
 }
+
 .feature__header {
     width: 100%;
     text-align: center;
-    margin-bottom: 66px; 
+    margin-bottom: 66px;
 }
+
 .feature__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     font-size: 42px;
-    text-transform: uppercase; 
-    padding-left: 14px; 
+    text-transform: uppercase;
+    padding-left: 14px;
     margin-bottom: 16px;
 }
+
 .feature__taxt {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     font-size: 16px;
     line-height: 28px;
     max-width: 550px;
-    margin: 0 auto 30px; 
+    margin: 0 auto 30px;
 }
-.feature__line { 
-    border: 1px solid #FF2D2D; 
+
+.feature__line {
+    border: 1px solid #FF2D2D;
     width: 134px;
     max-height: 4px;
 }
+
 .products__filter {
     width: 100%;
-    list-style: none; 
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    margin-bottom: 60px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
 }
+
 .products__link {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase; 
-    position: relative; 
+    text-transform: uppercase;
+    position: relative;
     left: 46px;
     color: #000000;
-    margin-right: 56px; 
+    margin-right: 56px;
     font-size: 22px;
     line-height: 24px;
     text-decoration: none;
 }
+
 .products__link_active {
     color: #FF2D2D;
-    opacity: 1; 
+    opacity: 1;
 }
-.products__link:hover { 
+
+.products__link:hover {
     color: #FF2D2D;
 }
+
 .products {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .product {
-    flex: 1 1 24%; 
-    max-width: 298px; 
+    flex: 1 1 24%;
+    max-width: 298px;
     height: 292px;
-    margin-bottom: 18px; 
-    object-fit: cover; 
+    margin-bottom: 18px;
+    object-fit: cover;
 }
+
 .product:hover {
-    cursor: pointer; 
-    max-width: 400px; 
+    cursor: pointer;
+    max-width: 400px;
 }
+
 /* Анимация https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 https://www.w3schools.com/css/css3_animations.asp*/
 
@@ -344,18 +393,23 @@ https://www.w3schools.com/css/css3_animations.asp*/
     padding-top: 60px;
     padding-bottom: 12px;
 }
+
 .team__header {
     width: 100%;
-    text-align: left; 
-    margin-bottom: 66px; 
+    text-align: left;
+    margin-bottom: 66px;
 
 }
+
 .team__heading {
-    font-size: 42px; /*размер шрифта*/
+    font-size: 42px;
+    /*размер шрифта*/
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase;
+    /*заголовок заглавными буквами*/
     margin-bottom: 24px;
 }
+
 .team__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     font-size: 16px;
@@ -364,12 +418,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
     max-width: 460px;
     margin-bottom: 30px;
 }
+
 .team__line {
-    border: 1px solid #FF2D2D; 
+    border: 1px solid #FF2D2D;
     max-width: 134px;
     max-height: 4px;
-    margin-left: 0; 
+    margin-left: 0;
 }
+
 .team__members {
     width: 100%;
     display: flex;
@@ -377,8 +433,10 @@ https://www.w3schools.com/css/css3_animations.asp*/
     align-items: stretch;
     min-height: 462px;
 }
+
 .team__selcted-photo {
-    flex-shrink: 0; /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink*/
+    flex-shrink: 0;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink*/
     max-width: 322px;
     height: 462px;
     margin-right: 66px;
@@ -386,25 +444,27 @@ https://www.w3schools.com/css/css3_animations.asp*/
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     align-self: start;
-                       
+
 }
 
-  .team__main-content {
+.team__main-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
 @supports (display: grid) and (display: contents) {
     .team__members {
         display: grid;
-        grid-template-columns: repeat(2, auto); 
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
     }
+
     .team__main-content {
         display: contents;
     }
 }
+
 .team__selcted-info {
     position: relative;
     display: flex;
@@ -415,20 +475,24 @@ https://www.w3schools.com/css/css3_animations.asp*/
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
+
 .team__selcted-about {
     margin: 0;
     line-height: 28px;
     margin-bottom: 34px;
 }
+
 .team__selcted-name {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase;
+    /*заголовок заглавными буквами*/
     margin-right: 30px;
     bottom: 6px;
     font-size: 30px;
     margin-bottom: 16px;
     font-weight: bold;
 }
+
 .team__selcted-link {
     color: #000000;
     font-size: 18px;
@@ -437,27 +501,32 @@ https://www.w3schools.com/css/css3_animations.asp*/
     text-decoration: none;
     margin-right: 30px;
 }
+
 .team__selcted-link:hover {
     text-decoration: underline;
 }
+
 .members {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     grid-column: 2 / 3;
 }
+
 .member {
     position: relative;
     margin-top: 18px;
 }
-.member:not(:last-child) { 
+
+.member:not(:last-child) {
     margin-right: 18px;
 }
+
 .member_name {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden; 
+    visibility: hidden;
     color: #FFFFFF;
     position: absolute;
     bottom: 0;
@@ -466,11 +535,13 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin: 0;
     text-align: center;
     background-color: #000000;
-    opacity: 0.5; 
+    opacity: 0.5;
 }
-.member:hover > .member_name {
-    visibility: visible; 
+
+.member:hover>.member_name {
+    visibility: visible;
 }
+
 .member-photo {
     display: block;
     width: 198px;
@@ -480,8 +551,10 @@ https://www.w3schools.com/css/css3_animations.asp*/
 
 /*subscribe*/
 .subscribe {
-    position: relative; /*отступ от верхней секции*/
-    bottom: -60px; /*отступ от верхней секции*/
+    position: relative;
+    /*отступ от верхней секции*/
+    bottom: -60px;
+    /*отступ от верхней секции*/
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -490,20 +563,23 @@ https://www.w3schools.com/css/css3_animations.asp*/
     padding-top: 124px;
     padding-bottom: 140px;
 }
+
 .subscribe__header {
     max-width: 1250px;
     margin: 0 auto;
     text-align: center;
 }
-.subscribe__heading{
+
+.subscribe__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     letter-spacing: 1px;
     font-size: 42px;
-    line-height: 24px;
+    line-height: 40px;
     color: #FFFFFF;
     font-weight: 700;
 
 }
+
 .subscribe__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     margin: 0;
@@ -512,13 +588,15 @@ https://www.w3schools.com/css/css3_animations.asp*/
     line-height: 28px;
     color: #FFFFFF;
 }
+
 .subscribe__form {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
 }
-.subscribe__input{
+
+.subscribe__input {
     color: #2C2C2C;
     display: flex;
     align-items: center;
@@ -532,6 +610,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     border-radius: 5px;
 
 }
+
 .subscribe__button {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     display: flex;
@@ -559,19 +638,21 @@ https://www.w3schools.com/css/css3_animations.asp*/
     align-items: flex-end;
     padding-top: 92px;
     padding-bottom: 110px;
-    
+
     /*display: grid;
     grid-template-columns: 1fr 732px 108px 412px 1fr;
     grid-template-rows: repeat(2,auto);*/
 }
+
 .feedback-contacts::after {
     height: 100%;
     background-color: #2D2D2D;
-    
+
     /*content: '';
     grid-column: 5 /6;
     grid-row: 2 /3;*/
 }
+
 .feedback__left-box {
     flex: 1 1 auto;
 }
@@ -580,7 +661,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     /*column-gap: 108px;
     grid-column: 2 /3;
     grid-row: 1 /3;*/
-    
+
     margin: 0 auto;
     padding-left: 106px;
 }
@@ -588,28 +669,36 @@ https://www.w3schools.com/css/css3_animations.asp*/
 .feedback__header {
     margin-bottom: 34px;
 }
+
 .feedback__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase; /*заголовок заглавными буквами*/
+    text-transform: uppercase;
+    /*заголовок заглавными буквами*/
     font-size: 42px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 26px; /*отступ заголовка от текста*/
+    margin-bottom: 26px;
+    /*отступ заголовка от текста*/
 }
+
 .feedback__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     line-height: 28px;
     max-width: 750px;
     margin: 0;
-    margin-bottom: 46px; /*отступ зтекста от линии*/
+    margin-bottom: 46px;
+    /*отступ зтекста от линии*/
     font-size: 16px;
 }
+
 .feedback__line {
-    border: 1px solid #FF2D2D; 
+    border: 1px solid #FF2D2D;
     width: 134px;
     max-height: 4px;
-    margin-left: 0; /*расстояние слева убираем, контент сдвигается влево*/
+    margin-left: 0;
+    /*расстояние слева убираем, контент сдвигается влево*/
 }
+
 .feedback__body {
     position: relative;
     display: flex;
@@ -620,11 +709,13 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin-right: 106px;
     padding: 0;
 }
+
 .feedback__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .feedback__input {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.25);
@@ -634,6 +725,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     border: none;
     border-radius: 5px;
 }
+
 .feedback__name,
 .feedback__mail {
     display: flex;
@@ -644,9 +736,11 @@ https://www.w3schools.com/css/css3_animations.asp*/
     background-color: rgba(0, 0, 0, 0.25);
     padding: 30px;
 }
+
 .feedback__messege {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    resize: none; /*окно ввода текста фиксировано не двигается не изменяется размер пользователем*/
+    resize: none;
+    /*окно ввода текста фиксировано не двигается не изменяется размер пользователем*/
     font-size: 16px;
     width: 100%;
     max-width: 746px;
@@ -659,6 +753,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin-top: 44px;
     padding: 30px;
 }
+
 .feedback__button {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     display: flex;
@@ -674,6 +769,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     text-transform: uppercase;
     border: none;
 }
+
 /*contacts*/
 
 .contacts {
@@ -685,6 +781,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     min-width: 580px;
     min-height: 486px;
 }
+
 .contacts__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     font-size: 18px;
@@ -694,20 +791,24 @@ https://www.w3schools.com/css/css3_animations.asp*/
     text-transform: uppercase;
     line-height: 34px;
 }
+
 .contacts__addres {
     line-height: 28px;
 }
+
 .contacts__line {
     line-height: 34px;
     margin-bottom: 27px;
     font-size: 16px;
 }
+
 /*FOOTER*/
 
 .footer {
     background-color: #313030;
     padding: 0 1vw;
 }
+
 .footer__content {
     box-sizing: border-box;
     padding: 20px 0 0;
@@ -715,48 +816,68 @@ https://www.w3schools.com/css/css3_animations.asp*/
     min-height: 112px;
     align-items: center;
 }
+
 .footer__copyright {
     margin: 0;
     line-height: 26px;
 }
+
 .footer__link {
     display: inline-block;
     padding: 20px 0 0;
 }
-.footer__social-links > .footer__link:not(:last-child) {
-    margin-right: 18px;
-} /*этой командой мы обозначили одинаковое расстояние между иконками соцсетей*/
 
-/*RESPONSIVE*/ 
+.footer__social-links>.footer__link:not(:last-child) {
+    margin-right: 18px;
+}
+
+/*этой командой мы обозначили одинаковое расстояние между иконками соцсетей*/
+
+/*RESPONSIVE*/
 /*берем за основу экран 1286рх, меняем стили под меньшии размеры экрана 
 (смотрим как все будет двигаться когда экран меняет форму, и подстраиваем стили*/
+
 @media screen and (max-width: 1286px) {
-   .intro {
-    flex-wrap: nowrap;
-   }
+    .intro {
+        flex-wrap: nowrap;
+    }
+
     .intro__content {
         width: 50%;
         box-sizing: border-box;
         margin-right: 0;
         padding-right: 16px;
     }
+
     .intro__heading {
         font-size: 5vw;
     }
+
     .intro__image {
         width: 100%;
         height: auto;
     }
+
     .products {
         justify-content: flex-start;
-    }    
+    }
+
     .product {
         max-width: 100%;
         margin-right: 10px;
     }
+
     .subscribe__heading {
-        line-height: 54px;
+        line-height: 50px;
     }
+
+    /*  .feedback__messege,
+       .feedback__button {
+        margin-right: 40px;
+        width: 80%;
+        max-width: 80%;*/
+
+
     .feedback {
         margin: 0;
         margin-bottom: 30px;
@@ -764,31 +885,136 @@ https://www.w3schools.com/css/css3_animations.asp*/
         grid-column: 1 / 6;
         grid-row: 1 / 2;
     }
+
     .feedback__body {
         margin-right: 0;
     }
+
     .feedback-contacts {
-        flex: 1 1 auto;
         flex-wrap: wrap;
-        /*padding-left: initial;
+        padding-left: initial;
         padding-right: initial;
-        padding: 0;*/
+        padding-bottom: 0;
         grid-template-columns: 100%;
     }
-        /*.feedback__left-box {
+
+    .feedback__left-box {
+        /*не чего не меняет*/
         flex: 0 1 auto;
-        }*/
-    
-        .contacts {
-            margin-bottom: 16px;
-            width: 50%;
-            height: 30%;
-            grid-column: 1 / 6;
-            grid-row: 2 /3;
-        }
-        .feedback-contacts::after {
-            content: initial;
-        }
     }
-    
-    
+
+    .contacts {
+        margin-bottom: 120px;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 50%;
+        max-height: 50%;
+        grid-column: 1 / 6;
+        grid-row: 2 /3;
+    }
+
+    .feedback-contacts::after {
+        content: initial;
+    }
+}
+
+@media screen and (max-width: 943px) {
+
+    .services__lead,
+    .services__blocks {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contacts {
+        margin-bottom: 120px;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 30%;
+        max-height: 30%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .services__lead {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .services__heading {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .products__item {
+        /*не чего не меняет*/
+        width: 100%;
+        text-align: center;
+    }
+
+    .service {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    .team__members {
+        grid-template-columns: 100%;
+        grid-template-columns: auto;
+    }
+
+    .team__selcted-photo {
+        grid-row: 1 /2;
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+
+    .team__selcted-info {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .services__lead {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .services__blocks {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 688px) {
+
+    .feedback__name,
+    .feedback__mail,
+    .feedback__messege {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .feedback__name,
+    .feedback__mail {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .intro {
+        flex-wrap: wrap;
+    }
+    .intro__content {
+        width: 100%;
+    }
+    .intro__link {
+        width: 100%;
+    }
+    .intro__heading {
+        font-size: 40px;
+    }
+}
