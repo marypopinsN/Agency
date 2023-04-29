@@ -53,6 +53,19 @@
             font-size: 2em;
         }
      */
+.header__line {
+    border: 1px solid #FF2D2D;
+    width: 134px;
+    max-height: 4px;
+}
+
+.section-heading {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
 
 .page {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -223,9 +236,6 @@
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     position: relative;
     bottom: 6px;
-    margin-bottom: 28px;
-    text-transform: uppercase;
-    font-size: 42px;
 }
 
 .services__text {
@@ -311,10 +321,7 @@
 
 .feature__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    font-size: 42px;
-    text-transform: uppercase;
     padding-left: 14px;
-    margin-bottom: 16px;
 }
 
 .feature__taxt {
@@ -325,11 +332,11 @@
     margin: 0 auto 30px;
 }
 
-.feature__line {
+/*.feature__line {
     border: 1px solid #FF2D2D;
     width: 134px;
     max-height: 4px;
-}
+}*/
 
 .products__filter {
     width: 100%;
@@ -401,14 +408,12 @@ https://www.w3schools.com/css/css3_animations.asp*/
 
 }
 
-.team__heading {
-    font-size: 42px;
-    /*размер шрифта*/
-    /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase;
-    /*заголовок заглавными буквами*/
-    margin-bottom: 24px;
-}
+/*.team__heading {
+    размер шрифта*/
+/*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
+/*заголовок заглавными буквами
+    
+}*/
 
 .team__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
@@ -420,9 +425,6 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 
 .team__line {
-    border: 1px solid #FF2D2D;
-    max-width: 134px;
-    max-height: 4px;
     margin-left: 0;
 }
 
@@ -667,19 +669,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 
 .feedback__header {
-    margin-bottom: 34px;
+    margin-bottom: 52px;
 }
 
-.feedback__heading {
+/*.feedback__heading {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
-    text-transform: uppercase;
-    /*заголовок заглавными буквами*/
-    font-size: 42px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 26px;
-    /*отступ заголовка от текста*/
-}
+/*заголовок заглавными буквами*/
+/*margin-bottom: 26px; отступ заголовка от текста 
+}*/
 
 .feedback__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
@@ -692,9 +689,6 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 
 .feedback__line {
-    border: 1px solid #FF2D2D;
-    width: 134px;
-    max-height: 4px;
     margin-left: 0;
     /*расстояние слева убираем, контент сдвигается влево*/
 }
@@ -837,7 +831,8 @@ https://www.w3schools.com/css/css3_animations.asp*/
 /*берем за основу экран 1286рх, меняем стили под меньшии размеры экрана 
 (смотрим как все будет двигаться когда экран меняет форму, и подстраиваем стили*/
 
-@media screen and (max-width: 1286px) {
+
+@media screen and (max-width: 1280px) {
     .intro {
         flex-wrap: nowrap;
     }
@@ -1008,12 +1003,15 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .intro {
         flex-wrap: wrap;
     }
+
     .intro__content {
         width: 100%;
     }
+
     .intro__link {
         width: 100%;
     }
+
     .intro__heading {
         font-size: 40px;
     }
