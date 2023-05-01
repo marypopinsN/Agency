@@ -1,4 +1,6 @@
-/*RECTANGLE* - Верхняя часть макета с навигацией*/
+:root {
+    --primary-bg-color: #2D2D2D;
+}
 
 @font-face {
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -53,6 +55,7 @@
             font-size: 2em;
         }
      */
+/*RECTANGLE* - Верхняя часть макета с навигацией*/
 .header__line {
     border: 1px solid #FF2D2D;
     width: 134px;
@@ -95,7 +98,7 @@
     max-width: 1250px;
     min-height: 90px;
     margin: 0 auto;
-    background: #000000;
+    background: var(--primary-bg-color);
 }
 
 .header__navigation {
@@ -255,7 +258,7 @@
 
 .services__blocks {
     flex: 1 1;
-    max-width: 610px;
+    width: clamp (300px, 50%, 610px);
     display: flex;
     flex-wrap: wrap;
     margin-top: 36px;
@@ -561,7 +564,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     display: block;
     width: 100%;
     max-width: 100%;
-    background-color: #2D2D2D;
+    background-color: var(--primary-bg-color);
     padding-top: 124px;
     padding-bottom: 140px;
 }
@@ -648,7 +651,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
 
 .feedback-contacts::after {
     height: 100%;
-    background-color: #2D2D2D;
+    background-color: var(--primary-bg-color);
 
     /*content: '';
     grid-column: 5 /6;
@@ -699,7 +702,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 750px;
+    width: 750px;
     margin-right: 106px;
     padding: 0;
 }
@@ -770,7 +773,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     box-sizing: border-box;
     position: relative;
     color: #FFFFFF;
-    background-color: #2D2D2D;
+    background-color: var(--primary-bg-color);
     padding: 126px 52px 126px 78px;
     min-width: 580px;
     min-height: 486px;
@@ -795,11 +798,22 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin-bottom: 27px;
     font-size: 16px;
 }
+/*этого у меня не было*/
+/*.contacts::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+    width: 100vw;
+    height: 100%;
+    background-color: var(--primary-bg-color);
+}*/
 
 /*FOOTER*/
 
 .footer {
-    background-color: #313030;
+    background-color: var(--primary-bg-color);
     padding: 0 1vw;
 }
 
@@ -808,6 +822,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     padding: 20px 0 0;
     color: #B8B8B8;
     min-height: 112px;
+    background-color: var(--primary-bg-color);
     align-items: center;
 }
 
@@ -831,6 +846,25 @@ https://www.w3schools.com/css/css3_animations.asp*/
 /*берем за основу экран 1286рх, меняем стили под меньшии размеры экрана 
 (смотрим как все будет двигаться когда экран меняет форму, и подстраиваем стили*/
 
+/*@media screen and (max-width: 1480px)
+     @media screen and (max-width: 1480px) {
+        .feedback__name,.feedback__mail {
+            width: clamp (200px, 50%, 338px);
+            
+        }
+    }
+
+    раздвинуть в форме имя и емаил
+
+на 1280px .feedback__form: {
+              justify-content: center;
+}
+.         .feedback__name,.feedback__mail: {
+              margin-right: 34px;
+              margin-left: 34px;
+}
+    */
+        
 
 @media screen and (max-width: 1280px) {
     .intro {
@@ -884,7 +918,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__body {
         margin-right: 0;
     }
-
+    
+    /*.feedback__form {
+        justify-content: center;
+    }
+    /*.feedback__name,.feedback__mail {
+        margin-right: 34px;
+        margin-left: 34px;
+    }*/
     .feedback-contacts {
         flex-wrap: wrap;
         padding-left: initial;
@@ -893,10 +934,10 @@ https://www.w3schools.com/css/css3_animations.asp*/
         grid-template-columns: 100%;
     }
 
-    .feedback__left-box {
-        /*не чего не меняет*/
+    /*.feedback__left-box {
+        /*не чего не меняет
         flex: 0 1 auto;
-    }
+    }*/
 
     .contacts {
         margin-bottom: 120px;
@@ -982,9 +1023,13 @@ https://www.w3schools.com/css/css3_animations.asp*/
         width: 100%;
         max-width: 100%;
     }
+    .feedback__header {
+        width: 100%;
+        max-width: 100%;
+        }
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 790px) {
 
     .feedback__name,
     .feedback__mail,
@@ -997,6 +1042,8 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__mail {
         margin-right: 0;
     }
+    
+    
 }
 
 @media screen and (max-width: 688px) {
@@ -1015,4 +1062,115 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .intro__heading {
         font-size: 40px;
     }
+   /*.feedback__header  {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .feedback__heading {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .feature__taxt {
+        width: 100%;
+        max-width: 60%;
+        justify-content: center;
+        text-align: center;
+        max-width: 444px;
+        margin: 70px;
+        margin-bottom: 0;
+    }*/
+}
+
+/*Pop-Up Menu*/
+
+.popup-menu__button {
+    z-index: 1;
+    display: none;
+    padding: 0;
+    min-width: 140px;
+    height: 100px;
+    background-image: url(../images/Combined\ shape\ 15719.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: var(--primary-bg-color);
+}
+
+/*Скрыть ненужные элементы*/
+
+@media screen and (max-width: 600px) {
+    .popup-menu__button {
+        display: block;
+    }
+    .menu {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+/*Стилизация меню независимая от медиязапроса*/
+
+.popup-menu {
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.popup-menu__list {
+    visibility: visible;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d;
+    transition: visibility, transform 1s, 0,5s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+    .popup-menu__list {
+        visibility: hidden;
+    }
+    
+}
+/*Стилизация меню независимая от медиязапроса*/
+.hide-popup {
+    transform: translateY(-50px);
+    z-index: -1;
+    visibility: hidden;
+}
+.popup-menu__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 54px;
+}
+.popup-menu__item:hover {
+    background-color: #FF2D2D;
+}
+.popup-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
 }
