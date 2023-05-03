@@ -684,6 +684,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
 .feedback__text {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     line-height: 28px;
+    width: 100%;
     max-width: 750px;
     margin: 0;
     margin-bottom: 46px;
@@ -960,6 +961,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .services__blocks {
         width: 100%;
         max-width: 100%;
+        /*margin: 0 auto;*/
     }
 
     .contacts {
@@ -968,6 +970,11 @@ https://www.w3schools.com/css/css3_animations.asp*/
         width: 100%;
         max-width: 30%;
         max-height: 30%;
+    }
+    .subscribe {
+        margin-top: 40px;
+        padding-top: 54px;
+        padding-bottom: 54px;
     }
 }
 
@@ -1004,15 +1011,24 @@ https://www.w3schools.com/css/css3_animations.asp*/
     }
 
     .team__selcted-photo {
-        grid-row: 1 /2;
+        grid-row: 1 / 2;
         margin-bottom: 18px;
         margin-right: 0;
-    }
+    } 
 
     .team__selcted-info {
         grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .members {
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
+
+    /*.contacts {
+        padding: 1vw;
+    } уводит весть текст в угол*/
 
     .services__lead {
         width: 100%;
@@ -1035,7 +1051,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__mail,
     .feedback__messege {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .feedback__name,
@@ -1047,6 +1063,18 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 
 @media screen and (max-width: 688px) {
+    
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .subscribe__text {
+        margin-bottom: 20px;
+    }
+
     .intro {
         flex-wrap: wrap;
     }
@@ -1062,6 +1090,20 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .intro__heading {
         font-size: 40px;
     }
+    /*.feedback__text {
+        width: 100%;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    
+    /*.header {
+        padding-left: 20px;
+    }*/
+
    /*.feedback__header  {
         width: 100%;
         max-width: 100%;
