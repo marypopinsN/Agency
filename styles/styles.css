@@ -202,7 +202,7 @@
 
 .intro__link {
     bottom: -40px;
-    position: relative;
+    position: relative; 
 }
 
 /*.intro__image {
@@ -879,9 +879,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         
 
 @media screen and (max-width: 1280px) {
-    .video {
-        width: 50%;
-}
+    
     .intro {
         flex-wrap: nowrap;
     }
@@ -1108,13 +1106,13 @@ https://www.w3schools.com/css/css3_animations.asp*/
         flex-wrap: wrap;
     }
 
-    .intro__content {
+    /*.intro__content {
         width: 100%;
     }
 
     .intro__link {
         width: 100%;
-    }
+    }*/
 
     .intro__heading {
         font-size: 40px;
@@ -1143,6 +1141,16 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__button {
         width: 70%;
     }
+    .feedback__text {
+        text-align: center;
+        margin-left: 154px;
+        width: 60%;
+    }
+    .feedback__line {
+        margin: 0 auto; 
+    }
+    
+    
     /*.feedback__text {
         width: 100%;
         width: 400px;
@@ -1180,6 +1188,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         margin-bottom: 0;
     }*/
 }
+
 
 /*Pop-Up Menu*/
 
@@ -1269,3 +1278,83 @@ https://www.w3schools.com/css/css3_animations.asp*/
     text-decoration: none;
     text-transform: uppercase;
 }
+@media screen and (max-width: 570px) {
+    .feedback__name,
+    .feedback__mail,
+    .feedback__messege {
+        text-align: center;
+    }
+
+    .contacts {
+        margin-bottom: 120px;
+        margin-top: 30px;
+        min-width: 60%;
+        text-align: center;
+    }
+    .video {
+        width: 100%;
+        min-width: 250px;
+        border: 2px solid #FF2D2D;
+}
+    .intro__heading {
+        font-size: 32px;
+}
+    .section-heading {
+        font-size: 22px;
+}
+    .products__filter {
+        line-height: 3;
+}
+    .subscribe__heading {
+        font-size: 28px;
+}
+    .subscribe__input {
+        flex: 1 1 215px;
+        flex-wrap: wrap;
+}
+    .subscribe__button {
+        width: 148px;
+}
+    .footer__content {
+        justify-content: center;
+}
+}
+@media screen and (max-width: 570px) {
+    .intro__heading {
+        font-size: 26px;
+}
+    .section-heading {
+        font-size: 20px;
+}
+    .service__heading {
+        font-size: 18px;
+}
+    /*.page {
+        font-size: 15px;
+}*/
+    .feedback__name,
+    .feedback__mail,
+    .feedback__messege {
+        width: 52%;
+        margin-top: 30px; 
+    }
+    .feedback__button {
+        width: 52%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contacts {
+        padding: 64px 70px 64px 52px;
+        min-height: 400px;
+    }
+}
+@media screen and (max-width: 454px) {
+    .contacts {
+        padding: 64px 25px 64px 25px;
+    }
+    .feedback__text {
+        margin-left: 230px;
+        width: 40%;
+    }
+}
+
