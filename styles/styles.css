@@ -202,7 +202,7 @@
 
 .intro__link {
     bottom: -40px;
-    position: relative; 
+    position: relative;
 }
 
 /*.intro__image {
@@ -213,12 +213,12 @@
 .video {
     width: 100%;
     min-width: 554px;
-    min-height: 360px; 
+    min-height: 360px;
     border: 2px solid #FF2D2D;
     /*margin: 0 auto;
     display: flex; 
     justify-content: center;
-    align-items: center;*/  
+    align-items: center;*/
 }
 
 .section {
@@ -269,7 +269,7 @@
 
 .services__blocks {
     flex: 1 1;
-    width: clamp (300px, 50%, 610px);
+    width: clamp(300px, 50%, 610px);
     display: flex;
     flex-wrap: wrap;
     margin-top: 36px;
@@ -810,6 +810,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     margin-bottom: 27px;
     font-size: 16px;
 }
+
 /*этого у меня не было*/
 /*.contacts::after {
     display: block;
@@ -876,10 +877,10 @@ https://www.w3schools.com/css/css3_animations.asp*/
               margin-left: 34px;
 }
     */
-        
+
 
 @media screen and (max-width: 1280px) {
-    
+
     .intro {
         flex-wrap: nowrap;
     }
@@ -931,7 +932,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__body {
         margin-right: 0;
     }
-    
+
     /*.feedback__form {
         justify-content: center;
     }
@@ -966,12 +967,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
         content: initial;
     }
 }
+
 @media screen and (max-width: 1046px) {
     .intro {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
     }
+
     .intro__link {
         bottom: 43px;
         position: relative;
@@ -995,11 +998,13 @@ https://www.w3schools.com/css/css3_animations.asp*/
         max-width: 30%;
         max-height: 30%;
     }
+
     .subscribe {
         margin-top: 40px;
         padding-top: 54px;
         padding-bottom: 54px;
     }
+
     /*.intro__link {
         margin-bottom: 120px;
         margin-top: 30px;
@@ -1037,7 +1042,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
 }
 
 @media screen and (max-width: 837px) {
-    
+
     .team__members {
         grid-template-columns: 100%;
         grid-template-columns: auto;
@@ -1047,7 +1052,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         grid-row: 1 / 2;
         margin-bottom: 18px;
         margin-right: 0;
-    } 
+    }
 
     .team__selcted-info {
         grid-column: 1 / 2;
@@ -1072,10 +1077,11 @@ https://www.w3schools.com/css/css3_animations.asp*/
         width: 100%;
         max-width: 100%;
     }
+
     .feedback__header {
         width: 100%;
         max-width: 100%;
-        }
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -1091,6 +1097,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__mail {
         margin-right: 0;
     }
+
     .section-heading {
         display: flex;
         justify-content: center;
@@ -1098,6 +1105,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         font-size: 30px;
         margin-bottom: 20px;
     }
+
     .subscribe__text {
         margin-bottom: 20px;
     }
@@ -1117,8 +1125,9 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .intro__heading {
         font-size: 40px;
     }
-    
+
 }
+
 @media screen and (max-width: 770px) {
     .feedback__form {
         display: flex;
@@ -1130,7 +1139,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__mail,
     .feedback__messege {
         width: 70%;
-        margin-top: 30px; 
+        margin-top: 30px;
     }
 
     .feedback__name,
@@ -1141,16 +1150,18 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__button {
         width: 70%;
     }
+
     .feedback__text {
         text-align: center;
         margin-left: 154px;
         width: 60%;
     }
+
     .feedback__line {
-        margin: 0 auto; 
+        margin: 0 auto;
     }
-    
-    
+
+
     /*.feedback__text {
         width: 100%;
         width: 400px;
@@ -1165,7 +1176,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         padding-left: 20px;
     }*/
 
-   /*.feedback__header  {
+    /*.feedback__header  {
         width: 100%;
         max-width: 100%;
         text-align: center;
@@ -1210,6 +1221,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .popup-menu__button {
         display: block;
     }
+
     .menu {
         border: 0;
         clip: rect(0 0 0 0);
@@ -1221,6 +1233,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
         width: 1px;
     }
 }
+
 /*Стилизация меню независимая от медиязапроса*/
 
 .popup-menu {
@@ -1229,6 +1242,7 @@ https://www.w3schools.com/css/css3_animations.asp*/
     display: flex;
     justify-content: center;
 }
+
 .popup-menu__list {
     visibility: visible;
     position: absolute;
@@ -1244,30 +1258,34 @@ https://www.w3schools.com/css/css3_animations.asp*/
     padding: 0;
     margin: 0;
     background-color: #2d2d2d;
-    transition: visibility, transform 1s, 0,5s ease-in-out;
+    transition: visibility, transform 1s, 0, 5s ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
     .popup-menu__list {
         visibility: hidden;
     }
-    
+
 }
+
 /*Стилизация меню независимая от медиязапроса*/
 .hide-popup {
     transform: translateY(-50px);
     z-index: -1;
     visibility: hidden;
 }
+
 .popup-menu__item {
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 54px;
 }
+
 .popup-menu__item:hover {
     background-color: #FF2D2D;
 }
+
 .popup-menu__link {
     display: flex;
     align-items: center;
@@ -1278,7 +1296,9 @@ https://www.w3schools.com/css/css3_animations.asp*/
     text-decoration: none;
     text-transform: uppercase;
 }
+
 @media screen and (max-width: 570px) {
+
     .feedback__name,
     .feedback__mail,
     .feedback__messege {
@@ -1291,44 +1311,56 @@ https://www.w3schools.com/css/css3_animations.asp*/
         min-width: 60%;
         text-align: center;
     }
+
     .video {
         width: 100%;
         min-width: 250px;
         border: 2px solid #FF2D2D;
-}
+    }
+
     .intro__heading {
         font-size: 32px;
-}
+    }
+
     .section-heading {
         font-size: 22px;
-}
+    }
+
     .products__filter {
         line-height: 3;
-}
+    }
+
     .subscribe__heading {
         font-size: 28px;
-}
+    }
+
     .subscribe__input {
         flex: 1 1 215px;
         flex-wrap: wrap;
-}
+    }
+
     .subscribe__button {
         width: 148px;
-}
+    }
+
     .footer__content {
         justify-content: center;
+    }
 }
-}
+
 @media screen and (max-width: 570px) {
     .intro__heading {
         font-size: 26px;
-}
+    }
+
     .section-heading {
         font-size: 20px;
-}
+    }
+
     .service__heading {
         font-size: 18px;
-}
+    }
+
     /*.page {
         font-size: 15px;
 }*/
@@ -1336,25 +1368,28 @@ https://www.w3schools.com/css/css3_animations.asp*/
     .feedback__mail,
     .feedback__messege {
         width: 52%;
-        margin-top: 30px; 
+        margin-top: 30px;
     }
+
     .feedback__button {
         width: 52%;
     }
 }
+
 @media screen and (max-width: 480px) {
     .contacts {
         padding: 64px 70px 64px 52px;
         min-height: 400px;
     }
 }
+
 @media screen and (max-width: 454px) {
     .contacts {
         padding: 64px 25px 64px 25px;
     }
+
     .feedback__text {
         margin-left: 230px;
         width: 40%;
     }
 }
-
